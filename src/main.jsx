@@ -12,6 +12,7 @@ import PostsPage from './Pages/PostsPage.jsx';
 import UsersDetailsPage from './Pages/UsersDetailsPage.jsx';
 import PostsDetailsPage from './Pages/PostsDetailsPage.jsx';
 import Home from './Pages/Home.jsx';
+import CreatePostPage from './Pages/CreatePostPage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
       {
         path: '/posts',
         element: <PostsPage></PostsPage>
+      },
+      {
+        path: '/createNewPost',
+        element: <CreatePostPage/>
       },
       {
         path: '/posts/:id',
