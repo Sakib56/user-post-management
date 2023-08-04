@@ -16,12 +16,12 @@ const UsersPage = () => {
             })
     }, [])
 
-    console.log(users)
+    // console.log(users)
     return (
         <div className="overflow-x-auto bg-primary py-10 text-white text-opacity-80 min-h-screen px-5">
-            <h1 className=' text-center mx-auto text-2xl font-serif font-bold mb-10'>ALL Users</h1>
+            <h1 className=' text-center mx-auto text-base md:text-2xl font-serif font-bold md:mb-10'>ALL Users</h1>
             {
-                loading ? <> <div className='text-center mt-10 overflow-hidden'><ClipLoader
+                loading ? <> <div className='text-center lg:mt-10 overflow-hidden'><ClipLoader
                     color="#36d7b7"
                     size={150}
                     aria-label="Loading Spinner"
@@ -30,7 +30,7 @@ const UsersPage = () => {
                     <table className="table">
 
                         <thead>
-                            <tr className='text-xl text-white text-opacity-80 font-serif'>
+                            <tr className='text-base lg:text-xl text-white text-opacity-80 font-serif'>
                                 <th>Sl</th>
                                 <th>Name</th>
                                 <th>Email</th>

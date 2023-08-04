@@ -16,7 +16,7 @@ const CreatePostPage = () => {
         })
         .then(res => res.json())
         .then(data => {
-            console.log(data)
+            // console.log(data)
             Swal.fire({
                 title: 'success!',
                 text: 'Data Inserted Successfully!',
@@ -27,9 +27,9 @@ const CreatePostPage = () => {
         })
     }
     return (
-        <div className='min-h-screen bg-slate-700 text-white'>
-            <h1 className='text-center font-bold text-2xl py-10'>Create New Post</h1>
-            <form onSubmit={handlePost} className='w-1/2 mx-auto '>
+        <div className='bg-slate-700 text-white py-5 md:py-10'>
+            <h1 className='text-center font-bold text-2xl py-4 md:py-10'>Create New Post</h1>
+            <form onSubmit={handlePost} className='w-3/4 md:w-1/2 mx-auto '>
                 <div className='form-control'>
                     <label>
                         <h1 className='text-lg'>Post Title</h1>

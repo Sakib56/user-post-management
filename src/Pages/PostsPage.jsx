@@ -15,10 +15,10 @@ const PostsPage = () => {
             })
     }, [])
 
-    console.log(posts)
+    // console.log(posts)
     return (
         <div className="overflow-x-auto bg-primary py-10 text-white text-opacity-80 min-h-screen px-5">
-            <h1 className=' text-center mx-auto text-2xl font-serif font-bold mb-10'>ALL Posts</h1>
+            <h1 className=' text-center mx-auto text-xl md:text-2xl font-serif font-bold mb-5 md:mb-10'>ALL Posts</h1>
             {
                 loading ? <> <div className='text-center mt-10 overflow-hidden'><ClipLoader
                     color="#36d7b7"
@@ -29,7 +29,7 @@ const PostsPage = () => {
                     <table className="table">
                      
                         <thead>
-                            <tr className='text-xl text-white text-opacity-80 font-serif'>
+                            <tr className='text-lg md:text-xl text-white text-opacity-80 font-serif'>
                                 <th>Sl</th>
                                 <th>Post Title</th>
                                 <th>Cover Photo</th>

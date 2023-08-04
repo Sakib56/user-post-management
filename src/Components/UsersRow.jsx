@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const UsersRow = ({ user, sl }) => {
     return (
         <>
-            <tr className='hover:bg-slate-900 text-lg font-serif'>
+            <tr className='hover:bg-slate-900 text-sm md:text-lg font-serif'>
                 <th>{sl}</th>
                 <td className='hover:underline'><Link to={`${user.id}`}>{user.name}</Link></td>
                 <td>{user.email}</td>
