@@ -11,12 +11,17 @@ import UsersPage from './Pages/UsersPage.jsx';
 import PostsPage from './Pages/PostsPage.jsx';
 import UsersDetailsPage from './Pages/UsersDetailsPage.jsx';
 import PostsDetailsPage from './Pages/PostsDetailsPage.jsx';
+import Home from './Pages/Home.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Main></Main>,
     children: [
+      {
+        path: '/',
+        element: <Home></Home>
+      },
       {
         path: '/users',
         element: <UsersPage></UsersPage>

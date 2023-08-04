@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { ClipLoader } from 'react-spinners';
-
+import UsersRow from '../Components/UsersRow';
 
 const UsersPage = () => {
 
@@ -39,6 +39,9 @@ const UsersPage = () => {
                         </thead>
                         <tbody>
 
+                            {
+                                users?.map((user, index) => <UsersRow key={user.id} user={user} sl={index + 1}></UsersRow>)
+                            }
 
                         </tbody>
                     </table>
